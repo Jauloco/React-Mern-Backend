@@ -1,8 +1,0 @@
-granjau64
-eq3isBEZcgFEkyIC
-
-DB data mongodb compass
-user: mern_user
-pass: fcHYZTHnB2RJwDFR
-
-mongodb+srv://mern_user:fcHYZTHnB2RJwDFR@calendardb.imrce.mongodb.net/
