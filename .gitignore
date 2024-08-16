@@ -1,2 +1,3 @@
 .vscode.*
 NOTES.txt
+node_module/
