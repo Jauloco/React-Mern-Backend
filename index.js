@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const { parsed:config } = require('dotenv').config();
 const { dbConecction } = require('./database/config');
@@ -16,8 +17,9 @@ app.use( express.json() );
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/events', require('./routes/events'));
 
-//TODO: CRUD: Eventos
-
+app.use('*', ( req, res ) => {
+    res.sendFile( path.join( __dirname, 'public/index.html') );
+});
 //escuchar peticiones
 app.listen( config.PORT, ()=>{
     console.log(`Servidor corriendo en puerto ${ config.PORT }`)
